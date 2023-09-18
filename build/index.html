@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tailwind website</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!--Navigation -->
     <nav class="fixed w-full bg-white drop-shadow-md">
         <div class="max-w-6x1 mx-auto flex justify-between items-center p-7">
             <a href="index.html" class="font-bold text-3x1">
@@ -35,18 +36,79 @@
         </div>
     </nav>
 
+    <!-- La premiere partie du site avec un coté text et un coté image  -->
     <header class="min-h-screen flex justify-center items-center pt-36 pb-7">
         <div class="grid grid-cols-1 md:grid-cols-2 items-center max-w-6x1 mx-auto px-7">
             <div class="mb-10 md:mb-0">
-                <h1 class="text-51 md:text-6x1 lg:text-7x1 x1:text-8x1">
+                <h1 class="text-5x1 md:text-6x1 lg:text-7x1 x1:text-8x1">
                     Manage <br> your 
                     <span class="font-bold">tasks</span>
                     <br>
                     quickly
                 </h1>
+                <p class="mb-5 mt-7 max-w-md text-gray-400">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, eius laudantium perspiciatis aliquam laboriosam culpa? Placeat, fugit hic? Sunt, autem!
+                </p>
+                <a href="#" class="bg-blue-700 hover\:bg-blue-800 transition-colors text-white py-3 px-7 rounded-md mr-4 mt-1 inline-block text-lg">
+                    Get Started 
+                </a>
+                <a href="#" class="font-bold">Learn More</a>
             </div>
+            <img src="img/img1.svg" alt="to-do">
         </div>
     </header>
+
+    <!-- La deuxieme partie du site avec un ensemble de Cases similaires -->
+    <section class="bg-blue-50 text-center">
+
+        <div class="max-w-6x1 mx-auto px-7 py-10">
+            <div class="mb-14">
+                <p class="text-blue-600 text-lg">
+                    Features
+                </p>
+                <h1 class="font-bold text-4x1">Our Special Features</h1>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="bg-white rounded-md py-6 px-2">
+                    <div class="bg-blue-200 text-blue-500 w-16 h-16 rounded-md mx-auto flex justify-center items-center text-3x1">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h2 class="font-bold text-2x1 my-3">User Friendly</h2>
+                    <p class="max-w-md mx-auto text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quod amet fuga deserunt exercitationem natus.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-md py-6 px-2">
+                    <div class="bg-blue-200 text-blue-500 w-16 h-16 rounded-md mx-auto flex justify-center items-center text-3x1">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h2 class="font-bold text-2x1 my-3">Trusted</h2>
+                    <p class="max-w-md mx-auto text-gray-400">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt rerum ipsam optio pariatur ducimus mollitia.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-md py-6 px-2">
+                    <div class="bg-blue-200 text-blue-500 w-16 h-16 rounded-md mx-auto flex justify-center items-center text-3x1">
+                        <i class="fas fa-sticky-note"></i>
+                    </div>
+                    <h2 class="font-bold text-2x1 my-3">Flexible</h2>
+                    <p class="max-w-md mx-auto text-gray-400">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt rerum ipsam optio pariatur ducimus mollitia.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-md py-6 px-2">
+                    <div class="bg-blue-200 text-blue-500 w-16 h-16 rounded-md mx-auto flex justify-center items-center text-3x1">
+                        <i class="fas fa-percentage"></i>
+                    </div>
+                    <h2 class="font-bold text-2x1 my-3">100% Free</h2>
+                    <p class="max-w-md mx-auto text-gray-400">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt rerum ipsam optio pariatur ducimus mollitia.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
     
 </body>
 </html>
